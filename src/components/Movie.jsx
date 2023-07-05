@@ -3,7 +3,6 @@ import { CiCircleMore } from "react-icons/ci";
 import { MdOutlineClose } from "react-icons/md";
 
 function Movie({item}) {
-  console.log(item);
     const {Title, Year, imdbID, Type, Poster} = item
   return (
     <div key={imdbID} className="card movie">
@@ -18,8 +17,8 @@ function Movie({item}) {
         </p>
         <CiCircleMore className="activator" />
       </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">
+      <div className="card-reveal">
+        <span className="card-title grey-text text-darken-4">
           {Title} <MdOutlineClose className="right card-title" />
         </span>
         <p>
